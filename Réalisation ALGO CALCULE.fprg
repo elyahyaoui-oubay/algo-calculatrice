@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-10-12 02:48:20 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC0xR1ZQVVYzOzIwMjEtMTAtMTI7IjAxOjE2OjEyICI7MzExNg=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC0xR1ZQVVYzOzIwMjEtMTAtMTI7IjAyOjQ4OjIwICI7MTszMjI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <declare name="op&#233;ration" type="String" array="False" size=""/>
+            <output expression="&quot;afficher num1&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;afficher num2&quot;" newline="True"/>
+            <input variable="num2"/>
+            <input variable="op&#233;ration"/>
+            <if expression="op&#233;ration = &quot;+&quot;">
+                <then>
+                    <assign variable="total" expression="num1+num2"/>
+                </then>
+                <else>
+                    <if expression="op&#233;ration = &quot;-&quot;">
+                        <then>
+                            <assign variable="total" expression="num1 - num2"/>
+                        </then>
+                        <else>
+                            <if expression="op&#233;ration = &quot;*&quot;">
+                                <then>
+                                    <assign variable="total" expression="num1*num2"/>
+                                </then>
+                                <else>
+                                    <if expression="op&#233;ration = &quot;/&quot;">
+                                        <then>
+                                            <assign variable="total" expression="num1/num2"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
